@@ -138,6 +138,11 @@ const Bolichito = {
     return this.mostrador.material.esBrillante() && this.vidriera.material.esBrillante()
   },
 
+  //indica si los dos objetos que tiene son del mismo color.
+  esMonocromatico(){
+    return this.mostrador.color == this.vidriera.color
+  },
+
   //indica si el objeto en el mostrador pesa más que el de la vidriera.s
   estaDesequilibrado() {
     return this.mostrador.peso() > this.vidriera.peso()
@@ -171,3 +176,5 @@ console.log(`Le gusta a Rosa? ${Rosa.leGusta(remera)} `)
 console.log(`Le gusta a Estefania? ${Estefania.leGusta(remera)} `)
 console.log(`Le gusta a Luisa? ${Luisa.leGusta(placa)} `)
 console.log(`Le gusta a Juan? ${Juan.leGusta(biblioteca)} `)
+//-----------------------------------------------------Bolichito------------------------------------
+console.log(`Bolichito es Monocromatico? ${Bolichito.esMonocromatico()}`)
