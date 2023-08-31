@@ -139,9 +139,18 @@ const Rosa = {
   }
   
     
-  //-----------------------------------------------------Pregunto por color-------------------------
+    //-----------------------------------------------------Pregunto por color---------------------------
     console.log(`¿El rojo es Fuerte?: ${rojo.esFuerte}`)
     console.log(`¿El verde es Fuerte?: ${verde.esFuerte}`)
     console.log(`¿El pardo es Fuerte?: ${pardo.esFuerte}`)
-    //-----------------------------------------------------Pregunto por material-------------------------
+    //-----------------------------------------------------Pregunto por material------------------------
     console.log(`¿El material cobre es brillante?: ${cobre.esBrillante}`)
+    //-----------------------------------------------------Pregunta por Objetos-------------------------
+    //-----------------------------------------------------remera---------------------------------------
+    console.log(`El color de la remera es Fuerte: ${remera.color.esFuerte}`)
+    console.log(`El material de la remera es Brillante: ${remera.material.esBrillante}`)
+    console.log(`El peso de la remera es: ${remera.peso} gramos`)
+    //-----------------------------------------------------Pelota---------------------------------------
+    console.log(`El color de la pelota es Fuerte ?: ${pelota.color.esFuerte}`)
+    console.log(`El material de la pelota es Brillante? ${pelota.material.esBrillante}`)
+    console.log(`Cual es el peso de la pelota? ${pelota.peso} gramos`)
