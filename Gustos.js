@@ -150,7 +150,7 @@ const Bolichito = {
 
   //indica si alguno de los dos objetos que tiene el boliche es del color indicado.
   tieneAlgoDeColor(elColor) {
-    return this.mostrador.color() == elColor || this.vidriera.color() == elColor
+    return this.mostrador.color == elColor || this.vidriera.color == elColor
   }
 
 }
@@ -180,3 +180,4 @@ console.log(`Le gusta a Juan? ${Juan.leGusta(biblioteca)} `)
 console.log(`Bolichito es Monocromatico? ${Bolichito.esMonocromatico()}`)
 console.log(`Bolichito mis objetos en vidriera son de un material que brilla? ${Bolichito.esBrillante()}`)
 console.log(`Bolichito el objeto en el mostrador pesa más que el de la vidriera? ${Bolichito.estaDesequilibrado()}`)
+console.log(`Bolichito alguno de los dos objetos que tiene el boliche es del color indicado? ${Bolichito.tieneAlgoDeColor(rojo)}`)
