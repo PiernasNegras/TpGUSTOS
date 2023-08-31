@@ -58,7 +58,7 @@ const Rosa = {
   }
   
   const lino = {
-    esBrillante : false,
+    esBrillante: false,
   }
   
   //---------------------------------------Defino mis objetos------------------------------------------------------------
@@ -138,5 +138,10 @@ const Rosa = {
   
   }
   
-  
-  
+    
+  //-----------------------------------------------------Pregunto por color-------------------------
+    console.log(`¿El rojo es Fuerte?: ${rojo.esFuerte}`)
+    console.log(`¿El verde es Fuerte?: ${verde.esFuerte}`)
+    console.log(`¿El pardo es Fuerte?: ${pardo.esFuerte}`)
+    //-----------------------------------------------------Pregunto por material-------------------------
+    console.log(`¿El material cobre es brillante?: ${cobre.esBrillante}`)
