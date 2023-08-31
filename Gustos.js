@@ -5,7 +5,7 @@
 const Rosa = {
   //le gustan las cosas que pesan 2 kilos (o sea 2000 gramos) o menos.
   leGusta(AlgoConPeso) {
-    return AlgoConPeso.peso >= 2000
+    return AlgoConPeso.peso <= 2000
   },
 
 }
@@ -170,4 +170,4 @@ console.log(`Cual es el peso de la pelota? ${pelota.peso} gramos`)
 console.log(`Le gusta a Rosa? ${Rosa.leGusta(remera)} `)
 console.log(`Le gusta a Estefania? ${Estefania.leGusta(remera)} `)
 console.log(`Le gusta a Luisa? ${Luisa.leGusta(placa)} `)
-console.log(`Le gusta a Juan? ${Juan.leGusta(pelota)} `)
+console.log(`Le gusta a Juan? ${Juan.leGusta(biblioteca)} `)
