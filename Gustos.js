@@ -101,13 +101,26 @@ const placa = {
 const Bolichito = {
     mostrador : pelota,
     vidriera : remera,
-    
+
+    //cambiar mis objetos
     cambioElObjetoDelMostrador(unObjeto){
         this.mostrador = unObjeto
     },
-
     cambioElObjetoDeVidriera(unObjeto){
         this.vidriera = unObjeto
     },
-    
+
+    //ver si mis objetos en vidriera son de un material que brilla
+    esBrillante(){
+        return this.mostrador.material.esBrillante() && this.vidriera.material.esBrillante()
+    },
+
+    //indica si el objeto en el mostrador pesa más que el de la vidriera.s
+    estaDesequilibrado(){
+        return this.mostrador.peso() > this.vidriera.peso()
+
+    },
 }
+
+
+
