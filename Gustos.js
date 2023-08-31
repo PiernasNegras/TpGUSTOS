@@ -143,9 +143,9 @@ const Bolichito = {
     return this.mostrador.color == this.vidriera.color
   },
 
-  //indica si el objeto en el mostrador pesa más que el de la vidriera.s
+  //indica si el objeto en el mostrador pesa más que el de la vidriera
   estaDesequilibrado() {
-    return this.mostrador.peso() > this.vidriera.peso()
+    return this.mostrador.peso > this.vidriera.peso
   },
 
   //indica si alguno de los dos objetos que tiene el boliche es del color indicado.
@@ -179,3 +179,4 @@ console.log(`Le gusta a Juan? ${Juan.leGusta(biblioteca)} `)
 //-----------------------------------------------------Bolichito------------------------------------
 console.log(`Bolichito es Monocromatico? ${Bolichito.esMonocromatico()}`)
 console.log(`Bolichito mis objetos en vidriera son de un material que brilla? ${Bolichito.esBrillante()}`)
+console.log(`Bolichito el objeto en el mostrador pesa más que el de la vidriera? ${Bolichito.estaDesequilibrado()}`)
