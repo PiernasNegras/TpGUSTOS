@@ -135,7 +135,7 @@ const Bolichito = {
 
   //ver si mis objetos en vidriera son de un material que brilla
   esBrillante() {
-    return this.mostrador.material.esBrillante() && this.vidriera.material.esBrillante()
+    return this.mostrador.material.esBrillante && this.vidriera.material.esBrillante
   },
 
   //indica si los dos objetos que tiene son del mismo color.
@@ -178,3 +178,4 @@ console.log(`Le gusta a Luisa? ${Luisa.leGusta(placa)} `)
 console.log(`Le gusta a Juan? ${Juan.leGusta(biblioteca)} `)
 //-----------------------------------------------------Bolichito------------------------------------
 console.log(`Bolichito es Monocromatico? ${Bolichito.esMonocromatico()}`)
+console.log(`Bolichito mis objetos en vidriera son de un material que brilla? ${Bolichito.esBrillante()}`)
