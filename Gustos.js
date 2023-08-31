@@ -15,7 +15,7 @@ const Luisa ={
 //le gustan las cosas que sean de un material que brilla.
 }
 
-const Juan {
+const Juan = {
 //le gustan las cosas que, o bien son de un color que no es fuerte, o bien pesan entre 1200 y 1800 gramos.
 }
 
@@ -86,6 +86,10 @@ const munieco = {
     material : vidrio,
     peso : undefined,
 
+    //cambio de peso actual
+    cambiarDePeso(nuevoPeso){
+        this.peso = nuevoPeso
+    },
 }
 
 const placa = {
@@ -93,6 +97,13 @@ const placa = {
     material : cobre,
     peso : undefined,
 
+    //cambio peso actual y color
+    cambiarDePeso(nuevoPeso){
+        this.peso = nuevoPeso
+    },
+    cambiarDeColor(nuevoColor){
+        this.color = nuevoColor
+    },
 
 }
 
@@ -118,8 +129,13 @@ const Bolichito = {
     //indica si el objeto en el mostrador pesa más que el de la vidriera.s
     estaDesequilibrado(){
         return this.mostrador.peso() > this.vidriera.peso()
-
     },
+
+    //indica si alguno de los dos objetos que tiene el boliche es del color indicado.
+    tieneAlgoDeColor(elColor){
+        return this.mostrador.color() == elColor || this.vidriera.color() == elColor
+    }
+
 }
 
 
