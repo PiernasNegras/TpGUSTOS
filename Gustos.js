@@ -177,7 +177,7 @@ console.log(`Le gusta a Estefania? ${Estefania.leGusta(remera)} `)
 console.log(`Le gusta a Luisa? ${Luisa.leGusta(placa)} `)
 console.log(`Le gusta a Juan? ${Juan.leGusta(biblioteca)} `)
 //-----------------------------------------------------Bolichito------------------------------------
-console.log(`Bolichito es Monocromatico? ${Bolichito.esMonocromatico()}`)
+console.log(`Bolichito los dos objetos que tiene son del mismo color? ${Bolichito.esMonocromatico()}`)
 console.log(`Bolichito mis objetos en vidriera son de un material que brilla? ${Bolichito.esBrillante()}`)
 console.log(`Bolichito el objeto en el mostrador pesa más que el de la vidriera? ${Bolichito.estaDesequilibrado()}`)
 console.log(`Bolichito alguno de los dos objetos que tiene el boliche es del color indicado? ${Bolichito.tieneAlgoDeColor(rojo)}`)
